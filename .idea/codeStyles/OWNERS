@@ -1,0 +1,9 @@
+review-level = "any-owner"
+[[owner]]
+email = "hearnden@canva.com"
+
+[[owner]]
+email = "mitchjust@canva.com"
+
+[[owner]]
+email = "beatrichartz@canva.com"
