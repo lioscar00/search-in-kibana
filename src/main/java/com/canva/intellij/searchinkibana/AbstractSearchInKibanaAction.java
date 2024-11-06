@@ -4,12 +4,10 @@ import com.intellij.ide.BrowserUtil;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
-import org.apache.commons.lang3.CharSequenceUtils;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.regex.Pattern;
 
 public abstract class AbstractSearchInKibanaAction extends AnAction {
   private final String baseUrl;
@@ -58,7 +56,7 @@ public abstract class AbstractSearchInKibanaAction extends AnAction {
           .limit(2)
           .toList();
 
-      queryStrings.forEach( s -> {
+      queryStrings.forEach(s -> {
         if (!query.isEmpty()) {
           query.append(" AND ");
         }
